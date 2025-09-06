@@ -1,4 +1,4 @@
-// Network Background Animation
+// ===== Network Background Animation =====
 const canvas = document.getElementById("network-bg");
 const ctx = canvas.getContext("2d");
 let width, height, particles;
@@ -31,7 +31,6 @@ function draw() {
     if (p.y < 0 || p.y > height) p.vy *= -1;
   }
 
-  // Draw connecting lines
   ctx.strokeStyle = "rgba(0,188,212,0.2)";
   for (let i = 0; i < particles.length; i++) {
     for (let j = i + 1; j < particles.length; j++) {
@@ -53,3 +52,49 @@ function draw() {
 window.addEventListener("resize", init);
 init();
 draw();
+
+// ===== Scroll Animations =====
+const sections = document.querySelectorAll("section");
+const progressBars = document.querySelectorAll(".progress-bar");
+const navLinks = document.querySelectorAll("nav a");
+
+function revealSections() {
+  let triggerBottom = window.innerHeight * 0.85;
+  sections.forEach(sec => {
+    let boxTop = sec.getBoundingClientRect().top;
+    if (boxTop < triggerBottom) {
+      sec.classList.add("show");
+    }
+  });
+}
+
+function animateSkills() {
+  progressBars.forEach(bar => {
+    let rect = bar.getBoundingClientRect();
+    if (rect.top < window.innerHeight * 0.85) {
+      bar.style.width = bar.getAttribute("data-skill");
+    }
+  });
+}
+
+function highlightNav() {
+  let fromTop = window.scrollY + 100;
+  navLinks.forEach(link => {
+    let section = document.querySelector(link.getAttribute("href"));
+    if (section.offsetTop <= fromTop && section.offsetTop + section.offsetHeight > fromTop) {
+      link.classList.add("active");
+    } else {
+      link.classList.remove("active");
+    }
+  });
+}
+
+window.addEventListener("scroll", () => {
+  revealSections();
+  animateSkills();
+  highlightNav();
+});
+
+revealSections();
+animateSkills();
+highlightNav();
