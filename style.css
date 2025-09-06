@@ -4,7 +4,7 @@
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background: #1e2a38;
-  color: #e6edf3;
+  color: #e6edf3; /* default light text */
   line-height: 1.6;
   position: relative;
   overflow-x: hidden;
@@ -27,6 +27,7 @@ header {
   padding: 3rem 1rem;
   border-bottom: 2px solid #00bcd4;
   animation: fadeInDown 1s ease;
+  color: #fff; /* force white */
 }
 
 header h1 {
@@ -38,8 +39,7 @@ header h1 {
 
 header p {
   font-size: 1.1rem;
-  color: #cfd8dc;
-  margin-bottom: 6px;
+  color: #f1f1f1; /* lighter */
 }
 
 .btn {
@@ -74,7 +74,7 @@ nav {
 }
 
 nav a {
-  color: #e6edf3;
+  color: #fff;
   margin: 5px 12px;
   text-decoration: none;
   font-weight: 500;
@@ -97,8 +97,8 @@ nav a.active {
 }
 
 section {
-  background: rgba(253, 253, 253, 0.85);
-  color: #222;
+  background: rgba(253, 253, 253, 0.92);
+  color: #222; /* dark text inside sections */
   border-left: 4px solid #00bcd4;
   border-radius: 12px;
   box-shadow: 0 8px 24px rgba(0,0,0,0.2);
@@ -131,93 +131,16 @@ ul { padding-left: 20px; }
 ul li { margin-bottom: 8px; }
 
 /* Skills Progress Bars */
-.skill {
-  margin: 10px 0;
-}
-
-.skill-name {
-  font-size: 0.9rem;
-  margin-bottom: 4px;
-  color: #444;
-}
-
-.progress {
-  background: #eaeaea;
-  border-radius: 20px;
-  overflow: hidden;
-  height: 12px;
-}
-
-.progress-bar {
-  height: 12px;
-  background: linear-gradient(90deg, #00bcd4, #58a6ff);
-  width: 0;
-  transition: width 1.5s ease;
-  position: relative;
-}
-
-.progress-bar::after {
-  content: attr(data-skill);
-  position: absolute;
-  right: 5px;
-  top: -18px;
-  font-size: 0.7rem;
-  color: #00bcd4;
-}
-
-/* Projects */
-#projects ul {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 15px;
-  list-style: none;
-  padding: 0;
-}
-
-#projects li {
-  background: rgba(253, 253, 253, 0.9);
-  padding: 15px;
-  border-radius: 10px;
-  transition: transform 0.3s, box-shadow 0.3s;
-  border: 1px solid #eee;
-  backdrop-filter: blur(4px);
-}
-
-#projects li:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 16px rgba(0,0,0,0.15);
-}
+.skill-name { color: #333; }
+.progress { background: #eaeaea; }
 
 /* Footer */
 footer {
   text-align: center;
   background: #1e2a38;
-  color: #cfd8dc;
+  color: #f1f1f1;
   padding: 1rem;
   margin-top: 30px;
   border-top: 1px solid #00bcd4;
   font-size: 0.9rem;
-}
-
-/* Animations */
-@keyframes fadeInDown {
-  from { opacity: 0; transform: translateY(-20px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-  header h1 { font-size: 2rem; }
-  header p { font-size: 0.95rem; }
-  .btn { padding: 8px 16px; font-size: 0.9rem; }
-}
-
-@media (max-width: 480px) {
-  header h1 { font-size: 1.6rem; }
-  header p { font-size: 0.85rem; }
-  nav { flex-direction: column; padding: 0.5rem; }
-  nav a { font-size: 0.9rem; margin: 5px 0; }
-  section { padding: 15px; }
-  h2 { font-size: 1.2rem; }
-  h3 { font-size: 1rem; }
 }
