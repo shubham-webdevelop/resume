@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Shubham Kadam — Portfolio</title>
   <meta name="description" content="Portfolio of Shubham Kadam — NOC Engineer, Web Developer, and problem-solver." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
@@ -34,13 +36,21 @@
   <header id="home" class="hero">
     <div class="container hero-grid">
       <div>
-        <span class="badge"><i class="ri-cpu-line"></i> NOC Engineer · Web Dev</span>
-        <h1 class="title">Hi, I’m Shubham —
-          <span class="gradient-text">Network Ops</span> specialist & problem-solver.</h1>
-        <p class="subtitle">Dynamic NOC Engineer with 1 year at DNA Infotel Pvt. Ltd. Skilled in troubleshooting, network administration, and system monitoring.</p>
-        <div class="hero-cta">
+        <span class="badge" data-animate><i class="ri-cpu-line"></i> NOC Engineer · Web Dev</span>
+        <h1 class="title" data-animate="2">Hi, I’m Shubham —
+          <span class="gradient-text">Network Ops</span>
+          specialist & problem-solver.</h1>
+        <p class="subtitle" data-animate="3">Dynamic NOC Engineer with 1 year at DNA Infotel Pvt. Ltd. Skilled in troubleshooting, network administration, and system monitoring. Passionate about using generative AI to boost efficiency and team performance.</p>
+        <div class="hero-cta" data-animate="4">
           <a class="btn" href="#projects"><i class="ri-rocket-line"></i> View Projects</a>
           <a class="btn" href="Shubham_UdayKadam_Resume.docx" download><i class="ri-download-2-line"></i> Download Resume</a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="grid-3">
+          <div class="stat"><i class="ri-signal-tower-line"></i><div><strong>Network Monitoring</strong><div class="muted">Mikrotik, Cisco, Huawei</div></div></div>
+          <div class="stat"><i class="ri-customer-service-2-line"></i><div><strong>Support</strong><div class="muted">Remote & Desktop</div></div></div>
+          <div class="stat"><i class="ri-server-line"></i><div><strong>Servers</strong><div class="muted">Config & Management</div></div></div>
         </div>
       </div>
     </div>
@@ -50,7 +60,27 @@
   <section id="about">
     <div class="container">
       <h2 class="section-title">About Me</h2>
-      <p class="section-desc">I’m a Network Operations Center Engineer who enjoys solving connectivity issues, automating tasks, and building clean UIs.</p>
+      <p class="section-desc">I’m a Network Operations Center Engineer who enjoys solving tough connectivity issues, automating routine work, and collaborating across teams. I also tinker with web development and enjoy building clean, fast UIs.</p>
+      <div class="about-grid">
+        <div class="card">
+          <h3>Quick Facts</h3>
+          <div class="info">
+            <div class="row"><strong>Location:</strong><br/>Virar, Maharashtra, India</div>
+            <div class="row"><strong>Experience:</strong><br/>1+ Years (NOC)</div>
+            <div class="row"><strong>Languages:</strong><br/>English, Hindi, Marathi</div>
+            <div class="row"><strong>Interests:</strong><br/>Outdoor, Travel, Photography, Editing</div>
+          </div>
+        </div>
+        <div class="card">
+          <h3>Personal Info</h3>
+          <div class="grid-2">
+            <div><span class="muted">Full Name</span><div><strong>Shubham Uday Kadam</strong></div></div>
+            <div><span class="muted">Email</span><div><a href="mailto:shubham.kadam3129@gmail.com"><strong>shubham.kadam3129@gmail.com</strong></a></div></div>
+            <div><span class="muted">Phone</span><div><a href="tel:+918999649043"><strong>+91 89996 49043</strong></a></div></div>
+            <div><span class="muted">DOB</span><div><strong>31 Jul 2003</strong></div></div>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -58,12 +88,21 @@
   <section id="skills">
     <div class="container">
       <h2 class="section-title">Skills</h2>
+      <p class="section-desc">Tech I work with regularly.</p>
       <div class="chips">
-        <span class="chip">Network Monitoring</span>
-        <span class="chip">Web Development</span>
-        <span class="chip">MySQL</span>
-        <span class="chip">HTML / CSS / JS</span>
-        <span class="chip">PHP</span>
+        <span class="chip">Network Monitoring & Administration</span>
+        <span class="chip">Network Troubleshooting</span>
+        <span class="chip">CRM Administration</span>
+        <span class="chip">Remote & Desktop Support</span>
+        <span class="chip">Server Configuration & Management</span>
+        <span class="chip">Programming Basics</span>
+        <span class="chip">Mikrotik</span>
+        <span class="chip">Cisco</span>
+        <span class="chip">Huawei</span>
+        <span class="chip">Syrotech</span>
+        <span class="chip">Raisecom</span>
+        <span class="chip">Genexis</span>
+        <span class="chip">Microsoft Office</span>
       </div>
     </div>
   </section>
@@ -71,12 +110,16 @@
   <!-- EXPERIENCE -->
   <section id="experience">
     <div class="container">
-      <h2 class="section-title">Experience</h2>
+      <h2 class="section-title">Work Experience</h2>
       <div class="timeline">
         <div class="item">
-          <h4>Network Operations Center Engineer — DNA Infotel Pvt. Ltd.</h4>
+          <h4>Network Operations Center Engineer · DNA Infotel Pvt. Ltd.</h4>
           <div class="meta">June 2024 — Present · Virar, Maharashtra</div>
-          <p>Monitoring and troubleshooting networks, CRM management, server configuration.</p>
+          <ul>
+            <li>Monitor and troubleshoot network issues to ensure uptime and performance.</li>
+            <li>Administer CRM, handle remote & desktop support for internal users.</li>
+            <li>Configure and manage servers and networking devices (Mikrotik, Cisco, Huawei, etc.).</li>
+          </ul>
         </div>
       </div>
     </div>
@@ -91,6 +134,14 @@
           <h4>B.Sc. Computer Science — A.S.P. College Devrukh, Ratnagiri</h4>
           <div class="meta">Apr 2024 · Grade: A</div>
         </div>
+        <div class="item">
+          <h4>HSC — G.K. Sapre Science Junior College of Devrukh, Ratnagiri</h4>
+          <div class="meta">Mar 2021 · 84.60%</div>
+        </div>
+        <div class="item">
+          <h4>SSC — Lok Vidyalaya Tulsani, Ratnagiri</h4>
+          <div class="meta">Mar 2019 · 79.40%</div>
+        </div>
       </div>
     </div>
   </section>
@@ -103,15 +154,15 @@
         <article class="card project">
           <div class="thumb"><i class="ri-fire-line"></i></div>
           <div class="body">
-            <h4>IoT Gas Detection</h4>
-            <p class="muted">Detect flammable gases and auto-trigger exhaust systems.</p>
+            <h4>IoT — Flammable Gas Detection & Auto-Exhaust</h4>
+            <p class="muted">Designed a system to detect flammable gases and automatically trigger exhaust systems for safety.</p>
           </div>
         </article>
         <article class="card project">
           <div class="thumb"><i class="ri-calendar-check-line"></i></div>
           <div class="body">
-            <h4>Event Management System</h4>
-            <p class="muted">A web app to create and manage events.</p>
+            <h4>Event Management System — Website</h4>
+            <p class="muted">Built a basic event management web app to create, manage, and track events.</p>
           </div>
         </article>
       </div>
@@ -123,8 +174,8 @@
     <div class="container">
       <h2 class="section-title">Accomplishments</h2>
       <ul class="card">
-        <li>District-level leadership training program.</li>
-        <li>Led NSS department at college.</li>
+        <li>Completed district-level leadership training program.</li>
+        <li>Led the NSS department at college.</li>
       </ul>
     </div>
   </section>
@@ -133,12 +184,11 @@
   <section id="contact">
     <div class="container">
       <h2 class="section-title">Contact</h2>
-      <p class="section-desc">I’m open to opportunities and collaborations. Send me a message!</p>
+      <p class="section-desc">I’m open to opportunities and collaborations. Feel free to reach out!</p>
       <div class="contact-wrapper">
         <div class="card contact-card">
           <h3>Send a Message</h3>
-          <!-- Formspree integration -->
-          <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="modern-form">
+          <form onsubmit="submitForm(event)" class="modern-form">
             <div class="form-row">
               <div class="form-group">
                 <input type="text" name="name" id="name" required placeholder=" " />
@@ -154,17 +204,18 @@
               <label for="message">Your Message</label>
             </div>
             <button class="btn small-btn" type="submit"><i class="ri-send-plane-2-line"></i> Send</button>
+            <div id="formStatus" class="muted"></div>
           </form>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- FOOTER -->
   <footer>
     <div class="container">
       <div class="footer-flex">
         <div>© <span id="year"></span> Shubham Kadam. All rights reserved.</div>
+        <div class="muted">Built with ♥ — HTML/CSS/JS</div>
       </div>
     </div>
   </footer>
